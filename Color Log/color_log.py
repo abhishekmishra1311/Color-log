@@ -5,7 +5,10 @@ import coloredlogs
 logger = logging.getLogger('my_logger')
 coloredlogs.install(level='DEBUG', logger=logger)
 
+
+
 def main():
+    logger.info('Starting the application')
     logger.debug('This is a debug message')
     logger.info('This is an info message')
     logger.warning('This is a warning message')
